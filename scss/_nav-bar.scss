@@ -8,6 +8,8 @@ nav {
   background-color: white;
   width: 100vw;
   height: 3rem;
+  padding: 0.625rem;
+  align-items: center;
   @include flex-sb;
 }
 
