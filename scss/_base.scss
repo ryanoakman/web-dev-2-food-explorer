@@ -1,0 +1,10 @@
+@use "variables" as *;
+
+body {
+  background-image: $bg-img;
+}
+
+main {
+  margin: $margin;
+  max-width: $max-width;
+}
