@@ -14,3 +14,12 @@ $text-color-blue: #1b71a9;
 $max-width: 66.25rem;
 $margin: 0 1rem;
 $bg-img: url("../images/bg.jpg");
+
+// fonts
+@font-face {
+  font-family: "Roboto Condensed", sans-serif;
+  src: url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap");
+}
+
+$body-font: "Roboto Light", sans-serif;
+$header-font: "Roboto Condensed", sans-serif;
