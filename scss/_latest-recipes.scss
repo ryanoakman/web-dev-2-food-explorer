@@ -1,23 +1,18 @@
 @use "variables" as *;
 @use "typography" as *;
+@use "mixins" as *;
 
-main {
-  .latest-recipes {
-    background-color: #fff;
-  }
+.latest-recipes {
+  background-color: $bg-white;
 
   .side-bar-headings {
-    background-color: $light-blue;
-    padding: 1rem;
-    color: $text-color-light;
-    margin: 0;
+    @include side-bar-heading;
   }
 
   .recipe-entry {
     display: flex;
     flex-direction: row;
     margin: 0;
-    background-color: #fff;
     align-items: center;
     padding: 0.5rem;
 

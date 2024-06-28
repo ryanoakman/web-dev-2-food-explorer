@@ -4,3 +4,15 @@
   display: flex;
   justify-content: space-between;
 }
+
+@mixin side-bar-heading {
+  background-color: $light-blue;
+  padding: 1rem;
+  color: $text-color-light;
+  margin: 0;
+}
+
+@mixin body-font {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+}
