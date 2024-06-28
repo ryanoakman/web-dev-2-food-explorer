@@ -1,16 +1,22 @@
-@use "mixins" as *;
 @use "variables" as*;
 @use "typography" as*;
 
-.hero-img-wrapper {
-    @include hero-image-wrapper;
+.blog-posts {
+    article {
+        background-color: $white;
+        padding: $blog-padding;
 
-    img {
-        width: $imgWidth;
-    }
+        h2 {
+            color: $light-blue;
+            text-transform: uppercase;
+            font-size: 2rem;
+            font-weight: 500;
+            margin: $reset-margin;
+        }
 
-    p {
-        @include hero-text
+        p {
+            margin: .5rem 0 2rem 0;
+            font-size: 1.2rem;
+        }
     }
 }
-

@@ -1,1 +1,9 @@
 @use "variables" as *;
+
+.read-btn {
+    color: $white;
+    font-weight: bolder;
+    background-color: $light-blue;
+    border: none;
+    padding: .7rem .5rem .7rem;
+}
