@@ -2,15 +2,15 @@
 @use "variables" as*;
 @use "typography" as*;
 
-.post-img-wrapper {
-    @include blog-image-wrapper;
+.hero-img-wrapper {
+    @include hero-image-wrapper;
 
     img {
         width: $imgWidth;
     }
 
     p {
-        @include blog-text
+        @include hero-text
     }
 }
 
