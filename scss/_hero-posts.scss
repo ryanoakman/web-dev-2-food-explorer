@@ -2,9 +2,9 @@
 @use "typography" as*;
 
 .hero-img-wrapper {
-position: relative;
-width: $imgWidth;
-margin: .625rem auto 0;
+    position: relative;
+    width: $imgWidth;
+    margin: .625rem auto 0;
 
     img {
         width: $imgWidth;
@@ -24,6 +24,5 @@ margin: .625rem auto 0;
         padding: $blog-padding;
     }
 
-    // @media (min-width: 31.25rem)
 }
 
