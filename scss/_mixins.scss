@@ -1,4 +1,13 @@
+@use "variables" as *;
+
 @mixin flex-sb {
   display: flex;
   justify-content: space-between;
+}
+
+@mixin side-bar-heading {
+  background-color: $light-blue;
+  padding: 1rem;
+  color: $text-color-light;
+  margin: 0;
 }

@@ -1,5 +1,6 @@
 @use "variables" as *;
 @use "typography" as *;
+@use "mixins" as *;
 
 main {
   .latest-recipes {
@@ -7,10 +8,7 @@ main {
   }
 
   .side-bar-headings {
-    background-color: $light-blue;
-    padding: 1rem;
-    color: $text-color-light;
-    margin: 0;
+    @include side-bar-heading;
   }
 
   .recipe-entry {
