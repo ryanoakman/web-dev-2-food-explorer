@@ -1,10 +1,11 @@
 @use "mixins" as *;
+@use "variables" as *;
 
 .socials-desktop {
   display: none;
 }
 
-nav {
+.mb-nav {
   background-color: white;
   width: 100vw;
   height: 3rem;
@@ -15,4 +16,42 @@ nav {
 
 .dropdown {
   display: none;
+  background-color: $dark-blue;
+  ul {
+    display: block;
+    background-color: $dark-blue;
+    width: 100%;
+    text-align: center;
+    li {
+      padding: 0.5rem;
+      border-bottom: 1px solid $light-blue;
+      list-style: none;
+      a {
+        color: $text-color-light;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+.hb-menu {
+  display: block;
+  img {
+    width: 1.5rem;
+  }
+  button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+}
+
+.socials-mobile {
+  @include flex-sb;
+  flex-direction: row;
+  align-items: center;
+  .social-logo {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
 }
