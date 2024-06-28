@@ -2,10 +2,8 @@
 @use "typography" as *;
 @use "mixins" as *;
 
-main {
-  .latest-recipes {
-    background-color: $bg-white;
-  }
+.latest-recipes {
+  background-color: $bg-white;
 
   .side-bar-headings {
     @include side-bar-heading;

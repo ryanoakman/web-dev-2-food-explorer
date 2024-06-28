@@ -11,3 +11,8 @@
   color: $text-color-light;
   margin: 0;
 }
+
+@mixin body-font {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+}

@@ -1,3 +1,19 @@
 @use "variables" as *;
 @use "typography" as *;
 @use "mixins" as *;
+
+.cuisines {
+  h2 {
+    @include side-bar-heading;
+  }
+  background-color: $bg-white;
+
+  ul {
+    column-count: 2;
+    padding: 0.25rem;
+  }
+  li {
+    padding: 0.3rem;
+    list-style: none;
+  }
+}
