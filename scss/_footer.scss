@@ -2,15 +2,18 @@
 @use "mixins" as *;
 
 footer {
-  background-color: $light-blue;
+  background-color: $dark-blue;
   color: $white;
   height: 3rem;
   text-align: center;
   font-size: 14px;
-  margin-top: 1rem;
+  margin-top: 2rem;
   p {
     margin: 0 auto;
     padding: 0.5rem;
     font-family: $header-font;
+    // bold text
+    font-weight: 400;
+    text-wrap: balance;
   }
 }
