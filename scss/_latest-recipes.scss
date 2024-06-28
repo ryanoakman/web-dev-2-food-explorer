@@ -1,7 +1,41 @@
-@use "variables";
+@use "variables" as *;
 @use "typography";
 
 main {
   .latest-recipes {
+    background-color: #fff;
+  }
+
+  .side-bar-headings {
+    background-color: $light-blue;
+    padding: 1rem;
+    color: $text-color-light;
+    margin: 0;
+  }
+
+  .recipe-entry {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    background-color: #fff;
+    align-items: center;
+    padding: 0.5rem;
+
+    img {
+      border-left: 0.175rem solid $light-blue;
+      border-top: 0.175rem solid $light-blue;
+      border-right: 0.1rem solid $light-blue;
+      border-bottom: 0.1rem solid $light-blue;
+    }
+
+    p {
+      font-family: $body-font;
+      text-transform: uppercase;
+      margin-left: 0.5rem;
+    }
+  }
+
+  .recipe-entry:nth-child(odd) {
+    background-color: $grey;
   }
 }
