@@ -1,5 +1,5 @@
 @use "variables" as *;
-@use "typography";
+@use "typography" as *;
 
 main {
   .latest-recipes {
@@ -29,7 +29,6 @@ main {
     }
 
     p {
-      font-family: $body-font;
       text-transform: uppercase;
       margin-left: 0.5rem;
     }
