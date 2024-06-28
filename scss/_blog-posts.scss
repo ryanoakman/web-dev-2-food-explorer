@@ -5,6 +5,7 @@
     article {
         background-color: $white;
         padding: $blog-padding;
+        margin-bottom: 2rem;
 
         h2 {
             color: $light-blue;
@@ -18,5 +19,10 @@
             margin: .5rem 0 2rem 0;
             font-size: 1.2rem;
         }
+
+    }
+    
+    .older-btn {
+        width: 12rem;
     }
 }
