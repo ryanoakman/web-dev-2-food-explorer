@@ -23,3 +23,13 @@ $bg-img: url("../images/bg.jpg");
 
 $body-font: "Roboto Light", sans-serif;
 $header-font: "Roboto Condensed", sans-serif;
+
+// Media Query Breakpoints
+$desktopMax: em(1060);
+$desktop: em(770);
+$tabletLarge: em(670);
+$tabletSmall: em(500);
+$mobileLarge: em(330);
+
+// Image width
+$imgWidth: 100%;

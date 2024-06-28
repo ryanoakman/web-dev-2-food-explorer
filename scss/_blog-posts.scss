@@ -1,0 +1,16 @@
+@use "mixins" as *;
+@use "variables" as*;
+@use "typography" as*;
+
+.post-img-wrapper {
+    @include blog-image-wrapper;
+
+    img {
+        width: $imgWidth;
+    }
+
+    p {
+        @include blog-text
+    }
+}
+
