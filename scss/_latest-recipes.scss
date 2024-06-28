@@ -4,7 +4,7 @@
 
 main {
   .latest-recipes {
-    background-color: #fff;
+    background-color: $white;
   }
 
   .side-bar-headings {
@@ -15,7 +15,6 @@ main {
     display: flex;
     flex-direction: row;
     margin: 0;
-    background-color: #fff;
     align-items: center;
     padding: 0.5rem;
 
