@@ -1,1 +1,15 @@
 @use "variables" as *;
+
+.btn-read-wrapper {
+    text-align: right;
+}
+
+.read-btn {
+    color: $white;
+    font-weight: bolder;
+    font-size: 1.1rem;
+    background-color: $light-blue;
+    border: none;
+    padding: .7rem .5rem .7rem;
+    text-align: end;
+}

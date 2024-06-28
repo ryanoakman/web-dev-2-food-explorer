@@ -29,3 +29,17 @@ $bg-img: url("../images/bg.jpg");
 }
 
 $header-font: "Roboto Condensed", sans-serif;
+
+// Media Query Breakpoints
+$desktopMax: em(1060);
+$desktop: em(770);
+$tabletLarge: em(670);
+$tabletSmall: em(500);
+$mobileLarge: em(330);
+
+// Image width
+$imgWidth: 100%;
+
+$blog-padding: 0.7rem;
+
+$reset-margin: 0;
