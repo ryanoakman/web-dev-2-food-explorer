@@ -16,24 +16,29 @@
 
 .dropdown-menu {
   display: block;
-  background-color: $dark-blue;
+  background-color: $light-blue;
   width: 100%;
   height: 0rem;
   overflow: hidden;
   transition: height 0.3s ease-in-out;
   ul {
     display: block;
-    background-color: $dark-blue;
     width: 100%;
     text-align: center;
     padding: 0;
     li {
       padding: 0.5rem;
-      border-bottom: 1px solid $light-blue;
       list-style: none;
+      border: 1px solid $dark-blue;
       a {
         color: $text-color-light;
         text-decoration: none;
+      }
+      &:hover {
+        background-color: $dark-blue;
+        a {
+          color: $text-color-light;
+        }
       }
     }
   }
