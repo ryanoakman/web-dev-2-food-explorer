@@ -9,11 +9,20 @@
   background-color: $bg-white;
 
   ul {
-    column-count: 2;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     padding: 0.45rem;
-  }
-  li {
-    padding: 0.3rem;
     list-style: none;
+    max-width: fit-content;
+  }
+
+  li {
+    padding: 0.5rem;
+  }
+
+  @media (min-width: 31.25rem) {
+    ul {
+      grid-template-columns: repeat(3, 1fr);
+    }
   }
 }
