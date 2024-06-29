@@ -33,11 +33,14 @@
       a {
         color: $text-color-light;
         text-decoration: none;
+        font-weight: 400;
+        font-family: $header-font;
       }
       &:hover {
-        background-color: $dark-blue;
+        background-color: $white;
+        transition: background-color 0.3s ease-in-out;
         a {
-          color: $text-color-light;
+          color: $dark-blue;
         }
       }
     }
@@ -61,9 +64,13 @@
 }
 
 .socials-mobile {
-  @include flex-sb;
+  @include flex-center;
+  gap: 1rem;
   flex-direction: row;
   align-items: center;
+  background-color: $white;
+  margin: 0 auto;
+  height: 3rem;
   .social-logo {
     width: 1.5rem;
     height: 1.5rem;

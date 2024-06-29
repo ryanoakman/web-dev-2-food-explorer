@@ -5,6 +5,12 @@
   justify-content: space-between;
 }
 
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 @mixin side-bar-heading {
   background-color: $light-blue;
   padding: 1rem;
