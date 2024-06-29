@@ -1,9 +1,10 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles/styles.css" />
+    <script defer src="/scripts/script.js"></script>
     <title>Food Explorer</title>
   </head>
 
@@ -14,15 +15,18 @@
           <img
             class="social-logo"
             src="images/social-media/facebook-f.svg"
-            alt="Facebook link" />
+            alt="Facebook link"
+          />
           <img
             class="social-logo"
             src="images/social-media/google.svg"
-            alt="Google link" />
+            alt="Google link"
+          />
           <img
             class="social-logo"
             src="images/social-media/twitter.svg"
-            alt="Twitter link" />
+            alt="Twitter link"
+          />
         </figure>
       </section>
 
@@ -37,9 +41,18 @@
             </button>
           </div>
         </div>
-        <div class="dropdown">
+        <div class="dropdown-menu">
           <ul>
-            <li>Search <img src="images/search.png" alt="search image" /></li>
+            <li>
+              <div class="search-container">
+                <form action="#">
+                  <input type="text" placeholder="Search" name="search" />
+                  <button type="submit">
+                    <img src="images/search.png" alt="search image" />
+                  </button>
+                </form>
+              </div>
+            </li>
             <li><a href="#">Home</a></li>
             <li><a href="#">About</a></li>
             <li><a href="#">Reviews</a></li>
@@ -49,15 +62,18 @@
               <img
                 class="social-logo"
                 src="images/social-media/facebook-f.svg"
-                alt="Facebook link" />
+                alt="Facebook link"
+              />
               <img
                 class="social-logo"
                 src="images/social-media/google.svg"
-                alt="Google link" />
+                alt="Google link"
+              />
               <img
                 class="social-logo"
                 src="images/social-media/twitter.svg"
-                alt="Twitter link" />
+                alt="Twitter link"
+              />
             </figure>
           </ul>
         </div>
