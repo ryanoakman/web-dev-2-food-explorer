@@ -14,14 +14,19 @@
   @include flex-sb;
 }
 
-.dropdown {
-  display: none;
+.dropdown-menu {
+  display: block;
   background-color: $dark-blue;
+  width: 100%;
+  height: 0rem;
+  overflow: hidden;
+  transition: height 0.3s ease-in-out;
   ul {
     display: block;
     background-color: $dark-blue;
     width: 100%;
     text-align: center;
+    padding: 0;
     li {
       padding: 0.5rem;
       border-bottom: 1px solid $light-blue;
@@ -32,6 +37,10 @@
       }
     }
   }
+}
+
+.dropdown-menu.show {
+  height: 18rem;
 }
 
 .hb-menu {
