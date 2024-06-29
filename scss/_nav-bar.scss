@@ -12,28 +12,38 @@
   padding: 0.625rem;
   align-items: center;
   @include flex-sb;
+  position: relative;
+  z-index: 100;
 }
 
 .dropdown-menu {
   display: block;
-  background-color: $dark-blue;
+  background-color: $light-blue;
   width: 100%;
   height: 0rem;
   overflow: hidden;
   transition: height 0.3s ease-in-out;
   ul {
     display: block;
-    background-color: $dark-blue;
     width: 100%;
     text-align: center;
     padding: 0;
     li {
       padding: 0.5rem;
-      border-bottom: 1px solid $light-blue;
       list-style: none;
+      border: 1px solid $dark-blue;
       a {
         color: $text-color-light;
         text-decoration: none;
+        font-weight: 400;
+        font-family: $header-font;
+      }
+      &:hover {
+        background-color: $white;
+        transition: background-color 0.3s ease-in-out;
+        a {
+          color: $dark-blue;
+        }
       }
     }
   }
@@ -56,11 +66,97 @@
 }
 
 .socials-mobile {
-  @include flex-sb;
+  @include flex-center;
+  gap: 1rem;
   flex-direction: row;
   align-items: center;
+  background-color: $white;
+  border: solid 1px $dark-blue;
+  @include margin-center;
+  height: 3rem;
+  overflow: hidden;
   .social-logo {
     width: 1.5rem;
     height: 1.5rem;
+  }
+}
+
+.facebook {
+  @include mo-social-flex;
+  @include social-flip;
+  svg {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+  .f-blue {
+    fill: $light-blue;
+  }
+  .f-grey {
+    fill: $social-grey;
+  }
+  &:hover {
+    @include social-flip-back;
+  }
+}
+
+.google {
+  @include mo-social-flex;
+  @include social-flip;
+  svg {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+  .g-blue {
+    fill: $light-blue;
+  }
+  .g-grey {
+    fill: $social-grey;
+  }
+  &:hover {
+    @include social-flip-back;
+  }
+}
+
+.twitter {
+  @include mo-social-flex;
+  @include social-flip;
+  svg {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+  .t-blue {
+    fill: $light-blue;
+  }
+  .t-grey {
+    fill: $social-grey;
+  }
+  &:hover {
+    @include social-flip-back;
+  }
+}
+
+.search-container {
+  display: block;
+  position: relative;
+  input {
+    width: 100%;
+    height: 2rem;
+    border: 1px solid $dark-blue;
+    border-radius: 0.25rem;
+    font-family: $header-font;
+    background-color: $grey-input;
+    @include flex-center;
+    font-weight: 400;
+    font-size: 14px;
+    z-index: 1;
+  }
+  button {
+    position: absolute;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    top: 0;
+    right: 0;
+    z-index: 2;
   }
 }
