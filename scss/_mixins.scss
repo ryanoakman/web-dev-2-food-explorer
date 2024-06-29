@@ -11,6 +11,10 @@
   align-items: center;
 }
 
+@mixin margin-center {
+  margin: 0 auto;
+}
+
 @mixin side-bar-heading {
   background-color: $light-blue;
   padding: 1rem;
@@ -21,4 +25,14 @@
 @mixin body-font {
   font-family: "Roboto", sans-serif;
   font-weight: 300;
+}
+
+@mixin social-flip {
+  transform: translateY(1rem);
+  transition: transform 0.2s ease-in-out;
+}
+
+@mixin social-flip-back {
+  transform: translateY(-1.2rem);
+  transition: transform 0.2s ease-in-out;
 }

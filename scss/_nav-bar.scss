@@ -69,10 +69,72 @@
   flex-direction: row;
   align-items: center;
   background-color: $white;
-  margin: 0 auto;
+  border: solid 1px $dark-blue;
+  @include margin-center;
   height: 3rem;
+  overflow: hidden;
   .social-logo {
     width: 1.5rem;
     height: 1.5rem;
+  }
+}
+
+.facebook {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  @include social-flip;
+  svg {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+  .f-blue {
+    fill: $light-blue;
+  }
+  .f-grey {
+    fill: $social-grey;
+  }
+  &:hover {
+    @include social-flip-back;
+  }
+}
+
+.google {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  @include social-flip;
+  svg {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+  .g-blue {
+    fill: $light-blue;
+  }
+  .g-grey {
+    fill: $social-grey;
+  }
+  &:hover {
+    @include social-flip-back;
+  }
+}
+
+.twitter {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  @include social-flip;
+  svg {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+  .t-blue {
+    fill: $light-blue;
+  }
+  .t-grey {
+    fill: $social-grey;
+  }
+  &:hover {
+    @include social-flip-back;
   }
 }
