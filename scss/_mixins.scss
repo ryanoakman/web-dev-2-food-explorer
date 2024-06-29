@@ -29,10 +29,16 @@
 
 @mixin social-flip {
   transform: translateY(1rem);
-  transition: transform 0.2s ease-in-out;
+  transition: transform 0.3s ease-in-out;
 }
 
 @mixin social-flip-back {
   transform: translateY(-1.2rem);
-  transition: transform 0.2s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+}
+
+@mixin mo-social-flex {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
 }

@@ -80,9 +80,7 @@
 }
 
 .facebook {
-  display: flex;
-  flex-direction: column;
-  gap: 0.75rem;
+  @include mo-social-flex;
   @include social-flip;
   svg {
     width: 1.5rem;
@@ -100,9 +98,7 @@
 }
 
 .google {
-  display: flex;
-  flex-direction: column;
-  gap: 0.75rem;
+  @include mo-social-flex;
   @include social-flip;
   svg {
     width: 1.5rem;
@@ -120,9 +116,7 @@
 }
 
 .twitter {
-  display: flex;
-  flex-direction: column;
-  gap: 0.75rem;
+  @include mo-social-flex;
   @include social-flip;
   svg {
     width: 1.5rem;
