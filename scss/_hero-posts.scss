@@ -4,10 +4,12 @@
 .hero-img-wrapper {
     position: relative;
     width: $imgWidth;
-    margin: .625rem auto 0;
+    margin: .1rem auto 0;
 
     img {
+        height: $imgHeroHight;
         width: $imgWidth;
+        object-fit:cover;
     }
 
     p {
@@ -24,5 +26,15 @@
         padding: $blog-padding;
     }
 
+}
+
+
+@media (min-width: 41.875em) {
+
+    .hero-posts-second-block {
+        display: flex;
+        flex-direction: row;
+        gap: 0.4rem;
+    }
 }
 
