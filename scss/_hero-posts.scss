@@ -30,6 +30,11 @@
 
 
 @media (min-width: 41.875em) {
-    
+
+    .hero-posts-second-block {
+        display: flex;
+        flex-direction: row;
+        gap: 0.625rem;
+    }
 }
 
