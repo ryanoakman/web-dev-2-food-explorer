@@ -32,11 +32,11 @@ $bg-img: url("../images/bg.jpg");
 $header-font: "Roboto Condensed", sans-serif;
 
 // Media Query Breakpoints
-$desktopMax: em(1060);
-$desktop: em(770);
-$tabletLarge: em(670);
-$tabletSmall: em(500);
-$mobileLarge: em(330);
+$desktopMax: 66.25rem;
+$desktop: 48.125rem;
+$tabletLarge: 41.875rem;
+$tabletSmall: 31.25rem;
+$mobileLarge: 20.625rem;
 
 // Image width
 $imgWidth: 100%;

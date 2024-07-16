@@ -10,5 +10,27 @@ main {
 
   .site-wrapper {
     margin: $margin;
+
+    @media (min-width: $desktop) {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+    }
+  }
+
+  .col-left {
+    @media (min-width: $desktop) {
+      grid-column: 1 / 2;
+    }
+  }
+  .col-right {
+    @media (min-width: $desktop) {
+      grid-column: 2 / 3;
+    }
+  }
+
+  .blog-posts {
+    @media (min-width: $desktop) {
+      grid-row: 2 / 3;
+    }
   }
 }
