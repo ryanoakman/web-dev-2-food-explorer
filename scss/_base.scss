@@ -5,10 +5,10 @@ body {
 }
 
 main {
-  margin: $margin;
+  margin: 0 auto;
   max-width: $max-width;
 
   section {
-    margin: 1rem auto;
+    margin: $margin;
   }
 }
