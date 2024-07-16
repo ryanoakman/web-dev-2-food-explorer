@@ -13,23 +13,20 @@ main {
 
     @media (min-width: $desktop) {
       display: grid;
-      grid-template-columns: 2fr 1fr;
+      column-gap: 0.625rem;
+      row-gap: 0.625rem;
+      grid-template-columns: 70% 30%;
     }
   }
 
-  .col-left {
-    @media (min-width: $desktop) {
+  @media (min-width: $desktop) {
+    .col-left {
       grid-column: 1 / 2;
     }
-  }
-  .col-right {
-    @media (min-width: $desktop) {
+    .col-right {
       grid-column: 2 / 3;
     }
-  }
-
-  .blog-posts {
-    @media (min-width: $desktop) {
+    .blog-posts {
       grid-row: 2 / 3;
     }
   }
