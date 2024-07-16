@@ -181,6 +181,9 @@
     @include flex-center;
     font-weight: 400;
     font-size: 14px;
+    border: 0;
+    border-radius: 0.25rem;
+    padding: 1rem;
   }
 }
 
@@ -189,9 +192,12 @@
 }
 
 @media (min-width: 31.25rem) {
+  .mb-nav {
+    height: auto;
+  }
+
   .bp-500 {
     display: block;
-    border: 0;
   }
   .hb-menu {
     display: none;
