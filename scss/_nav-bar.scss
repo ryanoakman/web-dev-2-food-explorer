@@ -173,6 +173,16 @@
   }
 }
 
+.bp-500 {
+  display: none;
+}
+
 #list-search {
   padding: 0;
+}
+
+@media (min-width: 31.25rem) {
+  .bp-500 {
+    display: block;
+  }
 }
