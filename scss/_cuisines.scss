@@ -20,9 +20,15 @@
     padding: 0.5rem;
   }
 
-  @media (min-width: 31.25rem) {
+  @media (min-width: $tabletSmall) {
     ul {
       grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  @media (min-width: $desktop) {
+    ul {
+      display: block;
     }
   }
 }
