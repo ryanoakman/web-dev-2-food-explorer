@@ -11,6 +11,10 @@
   }
 }
 
+.sm-tablet-nav {
+  display: none;
+}
+
 .mb-nav {
   background-color: white;
   height: 3rem;
@@ -191,7 +195,8 @@
   padding: 0;
 }
 
-@media (min-width: 31.25rem) {
+//tablet small
+@media (min-width: $tabletSmall) {
   .mb-nav {
     height: auto;
   }
@@ -205,5 +210,29 @@
 
   .dropdown-menu {
     // Lets comment here
+  }
+
+  .sm-tablet-nav-wrap {
+    background-color: $dark-blue;
+    display: flex;
+    justify-content: center;
+    height: 3rem;
+    align-items: center;
+    .sm-tablet-nav {
+      max-width: $desktopMax;
+      background-color: $light-blue;
+      height: 3rem;
+      list-style: none;
+      @include flex-sb;
+      margin: 0 0.625rem;
+      padding: 1rem;
+      width: 100vw;
+      a {
+        color: $text-color-light;
+        text-decoration: none;
+        font-weight: 400;
+        font-family: $header-font;
+      }
+    }
   }
 }
