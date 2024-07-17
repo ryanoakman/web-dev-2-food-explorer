@@ -23,7 +23,6 @@
   @include flex-sb;
   position: relative;
   z-index: 100;
-  max-width: 66.25rem;
   margin: 0 auto;
   gap: 3.75rem;
 }
@@ -216,17 +215,19 @@
     background-color: $dark-blue;
     display: flex;
     justify-content: center;
-    height: 3rem;
+
     align-items: center;
+
     .sm-tablet-nav {
-      max-width: $desktopMax;
+      max-width: 47.5rem;
       background-color: $light-blue;
       height: 3rem;
       list-style: none;
       @include flex-sb;
       margin: 0 0.625rem;
       padding: 1rem;
-      width: 100vw;
+      width: 100%;
+      max-width: 65.63rem;
       a {
         color: $text-color-light;
         text-decoration: none;
@@ -236,3 +237,5 @@
     }
   }
 }
+
+// Tablet Large
