@@ -5,6 +5,11 @@
   justify-content: space-between;
 }
 
+@mixin flex-sa {
+  display: flex;
+  justify-content: space-around;
+}
+
 @mixin flex-center {
   display: flex;
   justify-content: center;

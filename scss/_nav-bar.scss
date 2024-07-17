@@ -20,7 +20,7 @@
   height: 3rem;
   padding: 0.625rem;
   align-items: center;
-  @include flex-sb;
+  @include flex-sa;
   position: relative;
   z-index: 100;
   margin: 0 auto;
@@ -227,7 +227,7 @@
       margin: 0 0.625rem;
       padding: 1rem;
       width: 100%;
-      max-width: 65.63rem;
+      max-width: 66.25rem;
       a {
         color: $text-color-light;
         text-decoration: none;
@@ -239,3 +239,33 @@
 }
 
 // Tablet Large
+@media (min-width: $tabletLarge) {
+  nav {
+    background-color: $white;
+  }
+
+  .socials-desktop {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    .social-logo {
+      width: 1.5rem;
+      height: 1.5rem;
+    }
+  }
+
+  .mb-nav {
+    max-width: $desktopMax;
+    gap: 1rem;
+    .logo-social-bar {
+      display: flex;
+      gap: 1rem;
+      align-items: center;
+      width: 50%;
+    }
+    .socials-desktop {
+      color: $dark-blue;
+    }
+  }
+}
