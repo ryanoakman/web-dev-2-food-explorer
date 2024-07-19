@@ -11,15 +11,18 @@
   }
 }
 
+.sm-tablet-nav {
+  display: none;
+}
+
 .mb-nav {
   background-color: white;
   height: 3rem;
   padding: 0.625rem;
   align-items: center;
-  @include flex-sb;
+  @include flex-sa;
   position: relative;
   z-index: 100;
-  max-width: 66.25rem;
   margin: 0 auto;
   gap: 3.75rem;
 }
@@ -191,7 +194,8 @@
   padding: 0;
 }
 
-@media (min-width: 31.25rem) {
+//tablet small
+@media (min-width: $tabletSmall) {
   .mb-nav {
     height: auto;
   }
@@ -205,5 +209,63 @@
 
   .dropdown-menu {
     // Lets comment here
+  }
+
+  .sm-tablet-nav-wrap {
+    background-color: $dark-blue;
+    display: flex;
+    justify-content: center;
+
+    align-items: center;
+
+    .sm-tablet-nav {
+      max-width: 47.5rem;
+      background-color: $light-blue;
+      height: 3rem;
+      list-style: none;
+      @include flex-sb;
+      margin: 0 0.625rem;
+      padding: 1rem;
+      width: 100%;
+      max-width: 66.25rem;
+      a {
+        color: $text-color-light;
+        text-decoration: none;
+        font-weight: 400;
+        font-family: $header-font;
+      }
+    }
+  }
+}
+
+// Tablet Large
+@media (min-width: $tabletLarge) {
+  nav {
+    background-color: $white;
+  }
+
+  .socials-desktop {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    .social-logo {
+      width: 1.5rem;
+      height: 1.5rem;
+    }
+  }
+
+  .mb-nav {
+    max-width: $desktopMax;
+    gap: 1rem;
+    .logo-social-bar {
+      display: flex;
+      gap: 1rem;
+      align-items: center;
+      width: 50%;
+    }
+    .socials-desktop {
+      color: $dark-blue;
+    }
   }
 }
