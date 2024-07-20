@@ -211,23 +211,24 @@
     // Lets comment here
   }
 
-  .sm-tablet-nav-wrap {
+  .sm-tablet-nav-wrapper {
+    width: 100%;
     background-color: $dark-blue;
-    display: flex;
-    justify-content: center;
 
-    align-items: center;
+    .sm-tablet-nav-wrap {
+      margin: 0 auto;
+      max-width: $max-width;
+    }
 
     .sm-tablet-nav {
-      max-width: 47.5rem;
       background-color: $light-blue;
       height: 3rem;
       list-style: none;
       @include flex-sb;
-      margin: 0 0.625rem;
+      margin: auto 0.625rem;
       padding: 1rem;
-      width: 100%;
-      max-width: 66.25rem;
+
+      max-width: $max-width;
       a {
         color: $text-color-light;
         text-decoration: none;
