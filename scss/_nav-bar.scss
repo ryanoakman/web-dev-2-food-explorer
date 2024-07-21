@@ -20,7 +20,7 @@
   height: 3rem;
   padding: 0.625rem;
   align-items: center;
-  @include flex-sa;
+  @include flex-sb;
   position: relative;
   z-index: 100;
   margin: 0 auto;
@@ -197,7 +197,16 @@
 //tablet small
 @media (min-width: $tabletSmall) {
   .mb-nav {
-    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    height: 3.5rem;
+    a {
+      grid-column: 1 / 3;
+    }
+  }
+
+  .dropdown-menu.show {
+    display: none;
   }
 
   .bp-500 {
@@ -205,10 +214,6 @@
   }
   .hb-menu {
     display: none;
-  }
-
-  .dropdown-menu {
-    // Lets comment here
   }
 
   .sm-tablet-nav-wrapper {
@@ -246,10 +251,8 @@
   }
 
   .socials-desktop {
-    display: flex;
-    gap: 1rem;
-    align-items: center;
-    justify-content: center;
+    display: block;
+    margin: 0;
     .social-logo {
       width: 1.5rem;
       height: 1.5rem;
@@ -259,14 +262,11 @@
   .mb-nav {
     max-width: $desktopMax;
     gap: 1rem;
-    .logo-social-bar {
-      display: flex;
-      gap: 1rem;
-      align-items: center;
-      width: 50%;
-    }
+    display: flex;
+    justify-content: space-between;
     .socials-desktop {
-      color: $dark-blue;
+      @include flex-sb;
+      gap: 1rem;
     }
   }
 }
