@@ -13,6 +13,9 @@
 
 .sm-tablet-nav {
   display: none;
+  .search-desktop {
+    display: none;
+  }
 }
 
 .mb-nav {
@@ -274,6 +277,31 @@
     .socials-desktop {
       @include flex-sb;
       gap: 1rem;
+    }
+  }
+}
+
+@media (min-width: $desktop) {
+  #search-tablet {
+    display: none;
+  }
+
+  .sm-tablet-nav {
+    position: relative;
+    .search-desktop {
+      display: block;
+      input {
+        width: 100%;
+        height: 2rem;
+        font-family: $header-font;
+        background-color: $grey-input;
+        @include flex-center;
+        font-weight: 400;
+        font-size: 14px;
+        border: 0;
+        border-radius: 0.25rem;
+        padding: 1rem;
+      }
     }
   }
 }
