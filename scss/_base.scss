@@ -16,8 +16,7 @@ main {
       grid-template-columns: 70% 29%;
       grid-template-areas:
         "header col-right"
-        "blog col-right"
-        "blog .";
+        "blog col-right";
       column-gap: 0.625rem;
       row-gap: 0.625rem;
     }
