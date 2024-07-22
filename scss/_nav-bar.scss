@@ -266,6 +266,11 @@
     display: flex;
     justify-content: space-between;
     height: 4rem;
+    .search-social {
+      display: flex;
+      flex-direction: row;
+      gap: 1rem;
+    }
     .socials-desktop {
       @include flex-sb;
       gap: 1rem;
