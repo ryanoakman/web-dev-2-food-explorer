@@ -302,24 +302,8 @@
   }
 
   #desktop-nav {
-    display: flex;
-    justify-content: space-between;
-    gap: 0;
-    padding: 0;
+    padding: 0 0 0 1rem;
     overflow: hidden;
-    li {
-      padding: 1rem 2rem;
-      &:last-child {
-        padding: 0;
-      }
-      &:hover {
-        background-color: $white;
-        a {
-          color: $dark-blue;
-          transition: all ease-in-out;
-        }
-      }
-    }
   }
 
   .sm-tablet-nav {
@@ -328,9 +312,7 @@
     overflow: hidden;
     .search-desktop {
       display: block;
-      width: 25%;
       input {
-        width: 100%;
         height: auto;
         font-family: $header-font;
         background-color: $grey-input;
