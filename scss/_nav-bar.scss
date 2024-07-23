@@ -291,11 +291,8 @@
   }
 
   #desktop-nav {
-    padding: 0;
+    padding: 0 0 0 1rem;
     overflow: hidden;
-    li:first-child {
-      padding: 1rem;
-    }
   }
 
   .sm-tablet-nav {
