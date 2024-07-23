@@ -236,10 +236,11 @@
       background-color: $light-blue;
       height: 3rem;
       list-style: none;
-      @include flex-sb;
+      display: flex;
+      justify-content: flex-start;
       margin: auto 0.625rem;
       align-items: center;
-      padding: 1rem;
+      // padding: 1rem;
       max-width: $max-width;
       a {
         color: $text-color-light;
@@ -302,24 +303,13 @@
   }
 
   #desktop-nav {
-    display: flex;
-    justify-content: space-between;
-    gap: 0;
-    padding: 0;
     overflow: hidden;
-    li {
-      padding: 1rem 2rem;
-      &:last-child {
-        padding: 0;
-      }
-      &:hover {
-        background-color: $white;
-        a {
-          color: $dark-blue;
-          transition: all ease-in-out;
-        }
-      }
-    }
+  }
+
+  .menu-item {
+    display: block;
+    width: 16%;
+    text-align: center;
   }
 
   .sm-tablet-nav {
@@ -329,6 +319,7 @@
     .search-desktop {
       display: block;
       width: 25%;
+      margin-left: auto;
       input {
         width: 100%;
         height: auto;
@@ -337,7 +328,6 @@
         @include flex-center;
         font-weight: 400;
         font-size: 1.2rem;
-        padding: 1rem;
         box-shadow: inset 0px -4px 9px rgba(0, 0, 0, 0.2509803922);
       }
     }
