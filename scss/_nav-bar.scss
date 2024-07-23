@@ -237,10 +237,10 @@
       height: 3rem;
       list-style: none;
       display: flex;
-      justify-content: flex-start;
+      justify-content: space-around;
       margin: auto 0.625rem;
       align-items: center;
-      // padding: 1rem;
+      padding: 0;
       max-width: $max-width;
       a {
         color: $text-color-light;
@@ -304,18 +304,29 @@
 
   #desktop-nav {
     overflow: hidden;
+    li {
+      &:hover {
+        background-color: $white;
+        a {
+          color: $dark-blue;
+        }
+      }
+    }
   }
 
   .menu-item {
     display: block;
     width: 16%;
     text-align: center;
+    padding: 1rem 0;
   }
 
   .sm-tablet-nav {
     position: relative;
     padding: 0;
     overflow: hidden;
+    display: flex;
+    justify-content: flex-start;
     .search-desktop {
       display: block;
       width: 25%;
