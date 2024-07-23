@@ -13,7 +13,7 @@ main {
 
     @media (min-width: $desktop) {
       display: grid;
-      grid-template-columns: 70% 29%;
+      grid-template-columns: 1fr 13rem;
       grid-template-areas:
         "header col-right"
         "blog col-right";
