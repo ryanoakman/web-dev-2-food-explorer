@@ -302,8 +302,24 @@
   }
 
   #desktop-nav {
-    padding: 0 0 0 1rem;
+    display: flex;
+    justify-content: space-between;
+    gap: 0;
+    padding: 0;
     overflow: hidden;
+    li {
+      padding: 1rem 2rem;
+      &:last-child {
+        padding: 0;
+      }
+      &:hover {
+        background-color: $white;
+        a {
+          color: $dark-blue;
+          transition: all ease-in-out;
+        }
+      }
+    }
   }
 
   .sm-tablet-nav {
