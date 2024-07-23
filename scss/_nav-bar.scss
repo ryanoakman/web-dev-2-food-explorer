@@ -256,6 +256,17 @@
 @media (min-width: $tabletLarge) {
   nav {
     background-color: $white;
+    .mb-nav {
+      svg {
+        height: 1.5rem;
+        width: 1.5rem;
+        &:hover {
+          .cls-1 {
+            fill: $social-grey;
+          }
+        }
+      }
+    }
   }
 
   .socials-desktop {
