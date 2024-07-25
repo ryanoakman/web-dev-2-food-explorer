@@ -1,11 +1,12 @@
 @use "variables" as *;
+@use "mixins" as *;
 
 body {
   background-image: $bg-img;
 }
 
 main {
-  margin: 0 auto;
+  @include margin-center;
   max-width: $max-width;
 
   .site-wrapper {
