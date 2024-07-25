@@ -58,6 +58,10 @@
         font-weight: 400;
         font-family: $header-font;
       }
+      &:last-child {
+        padding: 0;
+        border: none;
+      }
       &:hover {
         background-color: $white;
         transition: background-color 0.3s ease-in-out;
