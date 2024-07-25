@@ -1,33 +1,32 @@
-@use "variables" as*;
-@use "typography" as*;
+@use "variables" as *;
+@use "typography" as *;
 
 .blog-posts {
-    article {
-        background-color: $white;
-        padding: $blog-padding;
-        margin-bottom: 1rem;
+  article {
+    background-color: $white;
+    padding: $blog-padding;
+    margin-bottom: 1rem;
 
-        h2 {
-            color: $light-blue;
-            text-transform: uppercase;
-            font-size: 2rem;
-            font-weight: 500;
-            margin: $reset-margin;
-        }
-
-        p {
-            margin: .5rem 0 2rem 0;
-            font-size: .9rem;
-        }
-
-        img {
-            width: $imgWidth;
-            
-        }
-
+    h2 {
+      color: $light-blue;
+      text-transform: uppercase;
+      font-size: 2rem;
+      font-weight: 500;
+      margin: $reset-margin;
     }
-    
-    .older-btn {
-        width: 12rem;
+
+    p {
+      margin: 0.5rem 0 2rem 0;
+      font-size: 0.9rem;
     }
+
+    img {
+      width: $imgWidth;
+    }
+  }
+
+  .older-btn {
+    width: 12rem;
+    margin-top: 1rem;
+  }
 }
