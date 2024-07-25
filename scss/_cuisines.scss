@@ -1,13 +1,11 @@
 @use "variables" as *;
 @use "typography" as *;
 @use "mixins" as *;
-
 .cuisines {
   h2 {
     @include side-bar-heading;
   }
   background-color: $bg-white;
-
   ul {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -15,9 +13,8 @@
     list-style: none;
     max-width: fit-content;
   }
-
   li {
-    padding: 0.5rem;
+    padding: 0.4rem;
   }
 
   @media (min-width: $tabletSmall) {
@@ -25,7 +22,6 @@
       grid-template-columns: repeat(3, 1fr);
     }
   }
-
   @media (min-width: $desktop) {
     ul {
       display: block;
