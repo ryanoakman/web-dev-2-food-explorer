@@ -5,11 +5,15 @@
   display: none;
 }
 
-@media (min-width: 20.625em) {
+//Mobile Large
+
+@media (min-width: $mobileLarge) {
   .logo-src {
     display: block;
   }
 }
+
+//General Start
 
 .sm-tablet-nav {
   display: none;
@@ -21,7 +25,7 @@
 .mb-nav {
   background-color: white;
   height: 3rem;
-  padding: 0.625rem;
+  padding: $padding;
   align-items: center;
   @include flex-sb;
   position: relative;
@@ -43,8 +47,7 @@
     display: block;
     width: 100%;
     text-align: center;
-    padding: 0;
-    margin: 0;
+    @include reset-padding-margin;
     li {
       padding: 0.5rem;
       list-style: none;
@@ -83,6 +86,8 @@
   }
 }
 
+//Social Media Icons
+
 .socials-mobile {
   @include flex-center;
   gap: 1rem;
@@ -94,8 +99,7 @@
   height: 2.8rem;
   overflow: hidden;
   .social-logo {
-    width: 1.5rem;
-    height: 1.5rem;
+    @include social-resize;
   }
 }
 
@@ -103,8 +107,7 @@
   @include mo-social-flex;
   @include social-flip;
   svg {
-    width: 1.5rem;
-    height: 1.5rem;
+    @include social-resize;
   }
   .f-blue {
     fill: $light-blue;
@@ -121,8 +124,7 @@
   @include mo-social-flex;
   @include social-flip;
   svg {
-    width: 1.5rem;
-    height: 1.5rem;
+    @include social-resize;
   }
   .g-blue {
     fill: $light-blue;
@@ -139,8 +141,7 @@
   @include mo-social-flex;
   @include social-flip;
   svg {
-    width: 1.5rem;
-    height: 1.5rem;
+    @include social-resize;
   }
   .t-blue {
     fill: $light-blue;
@@ -152,6 +153,8 @@
     @include social-flip-back;
   }
 }
+
+//Search Container Start
 
 .search-container {
   display: block;
@@ -202,7 +205,8 @@
   padding: 0;
 }
 
-//tablet small
+// Tablet Small
+
 @media (min-width: $tabletSmall) {
   .mb-nav {
     display: grid;
@@ -256,14 +260,14 @@
 }
 
 // Tablet Large
+
 @media (min-width: $tabletLarge) {
   nav {
     background-color: $white;
     .mb-nav {
       padding: 0 2rem;
       svg {
-        height: 1.5rem;
-        width: 1.5rem;
+        @include social-resize;
         &:hover {
           .cls-1 {
             fill: $social-grey;
@@ -277,8 +281,7 @@
     display: block;
     margin: 0;
     .social-logo {
-      width: 1.5rem;
-      height: 1.5rem;
+      @include social-resize;
     }
   }
 
@@ -299,6 +302,8 @@
     }
   }
 }
+
+//Desktop
 
 @media (min-width: $desktop) {
   #search-tablet {
